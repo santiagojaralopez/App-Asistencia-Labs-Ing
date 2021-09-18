@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    /*background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgb(36, 36, 36) 100%);*/
+    background: linear-gradient(0deg, rgb(0, 42, 70) 0%, rgb(0, 61, 102) 100%);
+}
+
+header {
+    width: 100%;
+    height: auto;
+    padding: 60px 15px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /*background-color: rgb(12, 12, 12);*/
+}
+
+#header__logo {
+    width: 90px;
+    height: auto;
+    position: absolute;
+    top: 20px;
+    left: 50px;
+}
+
+header h1 {
+    color: whitesmoke;
+    font-size: 2.4rem;
+}
+
+main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    /*background-color: rgb(12, 12, 12);*/
+}
+
+.main__form--container {
+    min-width: 600px;
+    height: auto;
+    margin-bottom: 50px;
+    border: whitesmoke 1px solid;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.main__form--container h2 {
+    margin: 50px 0px 50px 0px;
+    font-size: 2rem;
+    color: whitesmoke;
+}
+
+.main__form--container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.main__form--container form label {
+    margin-bottom: 40px;
+}
+
+.input {
+    background-color: transparent;
+    border: 0px;
+    border-bottom: 2px solid whitesmoke;
+    font-size: 1.4rem;
+    padding: 0px 10px;
+    outline: none;
+    width: 300px;
+    height: 50px;
+    color: whitesmoke;
+}
+
+::placeholder {
+    color: rgb(172, 172, 172);
+}
+
+.button {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    width: 200px;
+    height: 50px;
+    letter-spacing: 1px;
+    margin: 15px 0px;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer__list-container {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.footer__list-container li {
+    width: 300px;
+    height: auto;
+    padding: 30px;
+    border: 1px solid whitesmoke;
+    color: whitesmoke;
+}
+
+.copy-labs {
+    margin: 30px auto;
+    font-size: 1.6rem;
+    color: whitesmoke;
+}
