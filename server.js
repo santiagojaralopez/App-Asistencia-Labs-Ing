@@ -12,6 +12,7 @@ const {PORT = 8000} = process.env;
 const HTML_CONTENT_TYPE = 'text/html';
 const CSS_CONTENT_TYPE = 'text/css';
 const JS_CONTENT_TYPE = 'text/javascript';
+const IMG_CONTENT_TYPE = 'image/png' || 'icon/ico';
 
 //Monto la ruta de el directorio a servir
 const PUBLIC_FOLDER = path.join(__dirname, 'public');
@@ -26,6 +27,10 @@ const requestListener = (req, res) => {
     //Si se requiere la ruta principal, devolvemos el index.html
     if (url === '/') {
         stream = createReadStream(`${PUBLIC_FOLDER}/index.html`);
+    } //Para las imagenes e íconos
+    else if (url.match('\.png$') || url.match('\.ico$')) {
+        contentType = IMG_CONTENT_TYPE;
+        stream = createReadStream(`${PUBLIC_FOLDER}${url}`);
     } //Para los archivos css
     else if (url.match('\.css$')) {
         contentType = CSS_CONTENT_TYPE;
