@@ -10,7 +10,6 @@ html {
 }
 
 body {
-    /*background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgb(36, 36, 36) 100%);*/
     background: linear-gradient(0deg, rgb(0, 42, 70) 0%, rgb(0, 61, 102) 100%);
 }
 
@@ -18,19 +17,21 @@ header {
     width: 100%;
     height: auto;
     padding: 60px 15px;
-    position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     text-align: center;
-    /*background-color: rgb(12, 12, 12);*/
+}
+
+header a {
+    width: 70px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 50px;
 }
 
 #header__logo {
-    width: 90px;
-    height: auto;
-    position: absolute;
-    top: 20px;
-    left: 50px;
+    width: 100%;
 }
 
 header h1 {
@@ -44,16 +45,12 @@ main {
     display: flex;
     text-align: center;
     justify-content: center;
-    /*background-color: rgb(12, 12, 12);*/
 }
 
 .main__form--container {
-    min-width: 600px;
+    width: 80%;
     height: auto;
     margin-bottom: 50px;
-    border: whitesmoke 1px solid;
-    border-radius: 20px;
-    background-color: rgba(255, 255, 255, 0.05);
 }
 
 .main__form--container h2 {
@@ -78,7 +75,7 @@ main {
     font-size: 1.4rem;
     padding: 0px 10px;
     outline: none;
-    width: 300px;
+    width: 100%;
     height: 50px;
     color: whitesmoke;
 }
@@ -104,24 +101,29 @@ main {
 footer {
     width: 100%;
     height: auto;
-    padding: 30px 20px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     text-align: center;
 }
 
 .footer__list-container {
+    width: 250px;
+    height: auto;
+    margin: 0 auto;
     margin-bottom: 30px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: column;
     list-style: none;
+    text-align: center;
+    justify-content: center;
 }
 
 .footer__list-container li {
-    width: 300px;
+    width: 100%;
     height: auto;
     padding: 30px;
+    margin-bottom: 20px;
     border: 1px solid whitesmoke;
     color: whitesmoke;
 }
@@ -130,4 +132,60 @@ footer {
     margin: 30px auto;
     font-size: 1.6rem;
     color: whitesmoke;
+}
+
+@media (min-width: 500px) {
+
+    .main__form--container {
+        min-width: 400px;
+        height: auto;
+        margin-bottom: 50px;
+        border: whitesmoke 1px solid;
+        border-radius: 20px;
+        background-color: rgba(255, 255, 255, 0.06);
+    }
+
+    .input {
+        width: 80%;
+    }
+
+}
+
+@media (min-width: 760px) {
+
+    header {
+        position: relative;
+    }
+
+    header a {
+        width: 70px;
+        height: auto;
+        position: absolute;
+        top: 40px;
+        left: 50px;
+    }
+
+    #header__logo {
+        width: 100%;
+    }
+
+    .main__form--container {
+        max-width: 600px;
+    }
+
+    .input {
+        width: 400px;
+    }
+
+    .footer__list-container {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .footer__list-container li {
+        width: 250px;
+    }
+
 }
