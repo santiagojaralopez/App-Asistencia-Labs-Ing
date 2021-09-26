@@ -4,9 +4,10 @@ const {createReadStream} = require('fs');
 const path = require('path');
 
 //Guardo el host en una constante
-const host = 'localhost';
+//127.0.0.1 hace referencia a localhost (el pc desde el cual se ejecute)
+const host = '127.0.0.1';
 //Y el puerto en una variable de entorno
-const {PORT = 8000} = process.env;
+const {PORT = 8080} = process.env;
 
 //Guardo los content-type de los archivos a servir
 const HTML_CONTENT_TYPE = 'text/html';
