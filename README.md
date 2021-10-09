@@ -1,2 +1,2 @@
 # App-Asistencia-Labs-Ing
-Desarrollo para los laboratorios de la Facultad de Ingenierías de la CUE AvH
+Automatización de la toma de asistencia de los laboratorios de ingeniería de la CUE AvH
