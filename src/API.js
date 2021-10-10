@@ -32,5 +32,5 @@ function doPost(e){
   const body = e.postData.contents;
   const bodyJSON = JSON.parse(body);
   
-  worksheet.appendRow( [bodyJSON.Nombre, bodyJSON.Identificaion, bodyJSON.Fecha] );
+  worksheet.appendRow( [bodyJSON.Nombre, bodyJSON.Identificacion, bodyJSON.Fecha] );
 }
