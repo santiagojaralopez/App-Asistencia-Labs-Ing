@@ -1,17 +1,6 @@
 const spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
 const worksheet = spreadsheet.getSheetByName("asistencia");
 
-function compareTwoArrays_(arr1, arr2) {
-  if(arr1.length !== arr2.length) return false;
-
-  for(let i = 0; i < arr1.length; i++) {
-    if(arr1[i] !== arr2[i]) return false;
-  }
-
-  return true;
-}
-
-
 function sendJSON_(jsonResponse) {
   return ContentService
     .createTextOutput(JSON.stringify(jsonResponse))
