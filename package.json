@@ -1,0 +1,33 @@
+{
+  "name": "app-asistencia-labs-ing",
+  "version": "1.0.0",
+  "description": "Automatización de la toma de asistencia de los laboratorios de ingeniería de la CUE AvH",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/santiagojaralopez/App-Asistencia-Labs-Ing.git"
+  },
+  "keywords": [
+    "API",
+    "JSON",
+    "server",
+    "automation",
+    "spreadsheets"
+  ],
+  "authors": [
+    "Santiago Jaramillo Lopez",
+    "Sarha Melissa Chica Otalvaro"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/santiagojaralopez/App-Asistencia-Labs-Ing/issues"
+  },
+  "homepage": "https://github.com/santiagojaralopez/App-Asistencia-Labs-Ing#readme",
+  "dependencies": {
+    "@types/google-apps-script": "^1.0.37"
+  }
+}
