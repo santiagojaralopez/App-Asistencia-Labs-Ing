@@ -10,18 +10,18 @@ submitButton.addEventListener("click", (e) => {
   let data = {
     "Nombre": nombre.value,
     "Identificacion": identificacion.value,
-    "Fecha": new Date()
+    "Fecha": String(new Date())
   };
 
   fetch(URL, {
-      method: 'POST', // *GET, POST, PUT, DELETE, etc.
-      mode: 'no-cors', // no-cors, *cors, same-origin
-      cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+      method: 'POST',
+      mode: 'no-cors',
+      cache: 'no-cache',
       headers: {
         'Content-Type': 'application/json'
       },
-      redirect: 'follow', // manual, *follow, error
-      body: JSON.stringify( data ) // body data type must match "Content-Type" header
+      redirect: 'follow',
+      body: JSON.stringify( data )
     }
   )
   .then(response => response.json())
