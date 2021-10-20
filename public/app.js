@@ -1,15 +1,18 @@
 const URL = 'https://script.google.com/macros/s/AKfycbxguKhGb5zGUoBRnU-ro-Zd7PIxskucRPq3gFhyic9ZuAtUKmLe/exec';
 
+const dataForm = document.getElementById('dataForm');
 const nombre = document.getElementById('nombre');
 const identificacion = document.getElementById('identificacion');
 const submitButton = document.getElementById('submit-button');
+const formList = document.getElementById('formList');
 
-submitButton.addEventListener("click", (e) => {
-  //e.preventDefault();
+dataForm.addEventListener("submit", (e) => {
+  e.preventDefault();
 
   let data = {
     "Nombre": nombre.value,
     "Identificacion": identificacion.value,
+    "Rol": formList.value,
     "Fecha": String(new Date())
   };
 
@@ -29,6 +32,8 @@ submitButton.addEventListener("click", (e) => {
     console.log('Success:', data);
   })
   .catch((error) => {
-    console.error('Error:', error);
+    console.error(error);
   });
+
+  dataForm.reset();
 });
