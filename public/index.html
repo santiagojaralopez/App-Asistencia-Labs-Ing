@@ -27,7 +27,14 @@
                     <input class="input" id="nombre" type="text" name="db-register" placeholder="Nombre" autocomplete="off" required>
                 </label>
                 <label for="identificacion">
-                    <input class="input" id="identificacion" type="text" name="db-register" placeholder="N° de Identificación" autocomplete="off" required>
+                    <input class="input" id="identificacion" type="number" name="db-register" placeholder="N° de Identificación" autocomplete="off" required>
+                </label>
+                <label for="rol">
+                    <p>Rol dentro de la práctica</p>
+                    <select name="db-register" id="formList">
+                        <option value="Estudiante">Estudiante</option>
+                        <option value="Responsable">Responsable de la practica</option>
+                    </select>
                 </label>
                 <label for="submit-button">
                     <input class="button" id="submit-button" type="submit" value="Hecho">
