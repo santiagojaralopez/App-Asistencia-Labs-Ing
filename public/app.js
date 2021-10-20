@@ -4,6 +4,7 @@ const dataForm = document.getElementById('dataForm');
 const nombre = document.getElementById('nombre');
 const identificacion = document.getElementById('identificacion');
 const submitButton = document.getElementById('submit-button');
+const formList = document.getElementById('formList');
 
 dataForm.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -11,6 +12,7 @@ dataForm.addEventListener("submit", (e) => {
   let data = {
     "Nombre": nombre.value,
     "Identificacion": identificacion.value,
+    "Rol": formList.value,
     "Fecha": String(new Date())
   };
 
